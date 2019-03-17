@@ -5,9 +5,7 @@ from sklearn.utils import shuffle
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.metrics import accuracy_score
-from xgboost import XGBClassifier
-from sklearn import preprocessing
-import warnings
+
 
 file_path = r'.\sms-spam-collection-dataset\spam.csv'
 df = pd.read_csv(file_path,encoding='latin-1')
