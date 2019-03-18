@@ -21,7 +21,6 @@ y = df['label']
 print(df.head())
 cv = CountVectorizer()
 x = cv.fit_transform(x) # Fit the Data
-from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.33, random_state=42)
 #Naive Bayes Classifier
 from sklearn.naive_bayes import MultinomialNB
